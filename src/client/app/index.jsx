@@ -13,10 +13,11 @@ import '../public/css/uc.css';
 
 // Components
 import MainNav from './MainNav.jsx';
+import ProductsGrid from './ProductsGrid.jsx';
 
 const Home = () => (
   <div className="uc-chrome">
-    <MainNav/>
+    <MainNav />
     <div className="uc-workspace">
       <div className="row">
         <div className="twelve columns">
@@ -50,8 +51,12 @@ const Home = () => (
 )
 
 const Products = () => (
-  <div>
-    <h2>Products</h2>
+  <div className='uc-chrome'>
+    <MainNav />
+    <div className='uc-workspace'>
+      <h2>Products</h2>
+      <ProductsGrid />
+    </div>
   </div>
 );
 
