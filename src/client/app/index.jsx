@@ -1,27 +1,22 @@
 import React from 'react'
 import {render} from 'react-dom';
-import '../public/css/normalize.css';
-import '../public/css/skeleton.css';
-import styles from '../public/css/uc.css';
-
 import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
+
+// Styles
+import '../public/css/normalize.css';
+import '../public/css/skeleton.css';
+import '../public/css/uc.css';
+
+// Components
+import MainNav from './MainNav.jsx';
 
 const Home = () => (
   <div className="uc-chrome">
-    <nav className="uc-main-nav">
-      <img className="uc-main-nav__logo" type="image/png" src="images/uc_logo_sm.png"/>
-      <ul className="uc-main-nav__items">
-        <li><h6><Link to="/products">Products</Link></h6></li>
-        <li><h6><Link to="/recipes">Recipes</Link></h6></li>
-        <li><h6><Link to="/#about">About</Link></h6></li>
-        <li><h6><a href="news.html">News & Events</a></h6></li>
-      </ul>
-      <img className="uc-main-nav__secondary-logo" type="image/png" src="images/lh_logo_sm.png"/>
-    </nav>
+    <MainNav/>
     <div className="uc-workspace">
       <div className="row">
         <div className="twelve columns">
@@ -58,13 +53,13 @@ const Products = () => (
   <div>
     <h2>Products</h2>
   </div>
-)
+);
 
 const Topic = ({ match }) => (
   <div>
     <h3>{match.params.topicId}</h3>
   </div>
-)
+);
 
 const Recipes = ({ match }) => (
   <div>
@@ -92,9 +87,9 @@ const Recipes = ({ match }) => (
       <h3>Please select a topic.</h3>
     )}/>
   </div>
-)
+);
 
-const BasicExample = () => (
+const Main = () => (
   <Router>
     <div>
       <Route exact path="/" component={Home}/>
@@ -102,6 +97,6 @@ const BasicExample = () => (
       <Route path="/recipes" component={Recipes}/>
     </div>
   </Router>
-)
+);
 
-render(<BasicExample/>, document.getElementById('app'));
+render(<Main/>, document.getElementById('app'));
