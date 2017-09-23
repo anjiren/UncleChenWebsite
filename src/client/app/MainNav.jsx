@@ -9,8 +9,8 @@ export default class MainNav extends React.Component {
         <ul className="uc-main-nav__items">
           <li><h6><Link to="/products">Products</Link></h6></li>
           <li><h6><Link to="/recipes">Recipes</Link></h6></li>
-          <li><h6><Link to="/#about">About</Link></h6></li>
-          <li><h6><a href="news.html">News & Events</a></h6></li>
+          <li><h6><Link to="/">About</Link></h6></li>
+          <li><h6><Link to="/news-and-events">News & Events</Link></h6></li>
         </ul>
         <img className="uc-main-nav__secondary-logo" type="image/png" src="images/lh_logo_sm.png"/>
       </nav>

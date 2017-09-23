@@ -69,6 +69,17 @@ html, body {
   background-color: white;
 }
 
+/* Common Styles */
+
+.uc-title-wrapper {
+  padding: 300px 0;
+  text-align: center;
+}
+
+h2.uc-title {
+  font-family: 'Unica One', 'Quicksand', sans-serif;
+}
+
 .uc-landing__banner {
   width: 100%;
 }
