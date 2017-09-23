@@ -12,7 +12,7 @@ class ProductsGrid extends React.Component {
         <Product />
         <Product />
         <Product />
-        
+
       </div>
     );
   }
