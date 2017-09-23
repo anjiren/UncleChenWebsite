@@ -3,6 +3,7 @@
 html, body {
   height: 100%;
   font-family: 'Quicksand', sans-serif;
+  background-color: #1c1c1c;
 }
 
 .uc-chrome {
@@ -74,7 +75,7 @@ html, body {
 
 .uc-landing__header {
   margin: 2rem 0;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 8rem;
   text-align: center;
   letter-spacing: 0.2rem;
   font-family: 'Unica One', 'Quicksand', sans-serif;
@@ -109,6 +110,24 @@ html, body {
   flex: 4;
   padding: 0 2rem;
   text-align: left;
+}
+
+.uc-landing__contact-us {
+  display: grid;
+  grid-template-columns: auto 300px;
+  padding: 60px 40px 60px 50px;
+  color: black;
+  background-color: #ffdb5d;
+}
+
+.uc-landing__contact-us h5 {
+  margin-right: 20px;
+  font-family: 'Unica One', 'Quicksand', sans-serif;
+}
+
+.uc-landing__contact-us p {
+  margin-bottom: 0;
+  font-size: 12px;
 }
 
 /* Products */
@@ -228,32 +247,17 @@ html, body {
   background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2px;
-  grid-row-gap: 2px;
   font-family: 'Unica One', 'Quicksand', sans-serif;
 }
 
-.uc-workspace-grid--1col {
-  background-color: white;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 2px;
-  grid-row-gap: 2px;
-}
-
 .uc-workspace-grid--blocky {
-  background-color: white;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 2px;
-  grid-row-gap: 2px;
+  grid-template-columns: 20px auto;
 }
 
 .uc-workspace-grid--black {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2px;
-  grid-row-gap: 2px;
 }
 
 .uc-workspace-grid-box {
@@ -283,6 +287,15 @@ html, body {
   color: white;
   line-height: 1;
   font-weight: 200;
+}
+
+.uc-workspace-grid-box-nonclick h4 {
+  font-family: 'Unica One', 'Quicksand', sans-serif;
+  color: #ffdb5d;
+}
+
+.uc-workspace-grid-box-nonclick p {
+  line-height: 1.45;
 }
 
 .uc-workspace-grid-box-nonclick--black {
