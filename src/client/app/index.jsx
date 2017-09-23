@@ -15,10 +15,11 @@ import '../public/css/uc.css';
 import Products from './Products.jsx';
 import Recipes from './Recipes.jsx';
 import MainNav from './MainNav.jsx';
+import ProductsGrid from './ProductsGrid.jsx';
 
 const Home = () => (
   <div className="uc-chrome">
-    <MainNav/>
+    <MainNav />
     <div className="uc-workspace">
       <div className="row">
         <div className="twelve columns">
