@@ -7,6 +7,7 @@ import Layout from './Layout';
 // Page Components
 import MainPage from './MainPage';
 import ProductsPage from './ProductsPage';
+import ProductsGridPage from './ProductsGridPage';
 import RecipesPage from './RecipesPage';
 import RecipeDetailPage from './RecipeDetailPage';
 import NewsAndEventsPage from './NewsAndEventsPage';
@@ -20,6 +21,7 @@ export const App = () => (
     <Switch>
       <Route exact path="/" component={MainPage} />
       <Route exact path="/products" component={ProductsPage} />
+      <Route exact path="/products/:category" component={ProductsGridPage} />
       <Route exact path="/recipes" component={RecipesPage} />
       <Route exact path="/recipes/:id" component={RecipeDetailPage} />
       <Route exact path="/news-and-events" component={NewsAndEventsPage} />

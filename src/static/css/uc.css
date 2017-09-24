@@ -363,3 +363,12 @@ h2.uc-title {
   text-decoration: none;
   color: #1c1c1c;
 }
+
+.uc-product-category-preview__link {
+  text-decoration: none;
+  color: white;
+}
+
+.uc-product-preview-img {
+  height: 300px;
+}
