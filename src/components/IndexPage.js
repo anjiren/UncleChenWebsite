@@ -1,67 +1,12 @@
-import React from 'react'
-import {render} from 'react-dom';
-import {
-  BrowserRouter,
-  Route,
-  Link
-} from 'react-router-dom';
-
-import {
-  Router,
-  browserHistory
-} from 'react-router';
-
-import { matchRoutes, renderRoutes } from 'react-router-config'
-
-// Styles
-import '../public/css/normalize.css';
-import '../public/css/skeleton.css';
-import '../public/css/uc.css';
-
-// Components
-import Products from './Products.jsx';
-import Recipes from './Recipes.jsx';
-import RecipeDetail from './RecipeDetail.jsx';
-import NewsAndEvents from './NewsAndEvents.jsx';
-import MainNav from './MainNav.jsx';
-import ProductsGrid from './ProductsGrid.jsx';
-
-// TODO
-const routes = [
-  { component: Main,
-    routes: [
-      { path: '/',
-        exact: true,
-        component: Home
-      },
-      { path: '/products',
-        component: Products,
-        // routes: [
-        //   { path: '/child/:id/grand-child',
-        //     component: GrandChild
-        //   }
-        // ]
-      },
-      {
-        path: '/recipes',
-        component: Recipes,
-      },
-      {
-        path: '/news-and-events',
-        component: NewsAndEvents,
-      },
-    ]
-  }
-];
+import React from 'react';
+import { AthleteCard } from './AthleteCard';
+import { MainNav } from './MainNav';
 
 export const Home = () => (
-  <div className="uc-chrome">
-    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8"></link>
-    <MainNav />
-    <div className="uc-workspace">
+  <div>
       <div className="row">
         <div className="twelve columns">
-          <img className="uc-landing__banner" type="image/png" src="images/peppers_cropped.png"/>
+          <img className="uc-landing__banner" type="image/png" src="/img/peppers_cropped.png"/>
         </div>
       </div>
       <div className="row">
@@ -123,26 +68,8 @@ export const Home = () => (
           <p>By fax: +15104719999</p>
           <p>By email: <a href="mailto:unclechen1688@gmail.com">unclechen1688@gmail.com</a></p>
         </div>
-      </div>
     </div>
   </div>
 )
 
-const Topic = ({ match }) => (
-  <div>
-    <h3>{match.params.topicId}</h3>
-  </div>
-);
-
-export const Main = () => (
-  <BrowserRouter>
-    <div>
-      <Route exact path="/" component={Home}/>
-      <Route path="/products" component={Products}/>
-      <Route path="/recipes" component={Recipes}/>
-      <Route path="/news-and-events" component={NewsAndEvents}/>
-    </div>
-  </BrowserRouter>
-);
-
-render(<Main/>, document.getElementById('app'));
+export default Home;

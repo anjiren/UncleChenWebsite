@@ -2,7 +2,6 @@ import React from 'react';
 import {render} from 'react-dom';
 
 class ProductsGrid extends React.Component {
-
   render() {
     return (
       <div>
@@ -12,7 +11,6 @@ class ProductsGrid extends React.Component {
         <Product />
         <Product />
         <Product />
-
       </div>
     );
   }
@@ -28,7 +26,6 @@ class Product extends React.Component {
     )
   }
 }
-
 
 class ProductImage extends React.Component {
   render() {
@@ -47,7 +44,5 @@ class ProductDescription extends React.Component {
   }
 
 }
-
-
 
 export default ProductsGrid;
