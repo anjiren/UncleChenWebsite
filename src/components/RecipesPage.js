@@ -1,18 +1,31 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Components
 import RecipesGrid from './RecipesGrid';
 
+// Data
+import recipes from '../data/recipes';
+
 export class RecipesPage extends React.Component {
   render() {
+    const recipeComponents = [];
+    Object.entries(recipes).forEach(([id, recipeData]) => {
+      recipeComponents.push(
+        <div
+          className="uc-workspace-grid-box uc-workspace-grid-box--white"
+          key={id}>
+          <Link
+            className="uc-recipe-preview__link"
+            to={`/recipes/${id}`}>
+            {recipeData.name}
+          </Link>
+        </div>
+      );
+    });
     return (
       <div className="uc-workspace-grid--black">
-        <div className="uc-workspace-grid-box uc-workspace-grid-box--white">Chinese Fried Chicken</div>
-        <div className="uc-workspace-grid-box uc-workspace-grid-box--white">Stir Fried String Beans</div>
-        <div className="uc-workspace-grid-box uc-workspace-grid-box--white">Ma Po Tofu</div>
-        <div className="uc-workspace-grid-box uc-workspace-grid-box--white">Chef Chu’s Classic Dry Braised Prawns - A Signature Dish!</div>
-        <div className="uc-workspace-grid-box uc-workspace-grid-box--white">Zha Jiang Noodles</div>
-        <div className="uc-workspace-grid-box uc-workspace-grid-box--white">Classic Twice-Cooked Pork</div>
+        {recipeComponents}
       </div>
     )
   }

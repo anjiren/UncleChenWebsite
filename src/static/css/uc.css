@@ -321,6 +321,10 @@ h2.uc-title {
   transform: scale(1.1);
 }
 
+.uc-workspace-grid-box:hover a {
+  color: white;
+}
+
 .uc-workspace-grid-box--white {
   background-color: white;
   color: #1c1c1c;
@@ -337,4 +341,25 @@ h2.uc-title {
 
 .uc-workspace-grid-box--black {
   background-color: #1c1c1c;
+}
+
+.uc-recipe-detail-wrapper {
+  padding: 60px 40px;
+}
+
+.uc-recipe-detail h3 {
+  font-family: 'Unica One', 'Quicksand', sans-serif;
+}
+
+.uc-recipe-detail h5 {
+  font-family: 'Unica One', 'Quicksand', sans-serif;
+}
+
+.uc-recipe-detail ol {
+  list-style-type: decimal;
+}
+
+.uc-recipe-preview__link {
+  text-decoration: none;
+  color: #1c1c1c;
 }
