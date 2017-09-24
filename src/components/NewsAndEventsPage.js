@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const NewsAndEventsPage = () => (
   <div className="uc-title-wrapper">
     <h2 className="uc-title">Stay tuned!</h2>
