@@ -1,8 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
+import products from '../data/products';
 
 export class ProductsGrid extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    var p = products['A']['A-6'];
+    Object.entries(p).forEach(([key, value]) => {console.log(key, value)})
     return (
       <div>
         <Product />
@@ -16,6 +23,10 @@ export class ProductsGrid extends React.Component {
 }
 
 export class Product extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div>

@@ -25,6 +25,7 @@ export class ProductsPage extends React.Component {
         <div className="uc-workspace-grid-box">
           Dried Goods
         </div>
+        <ProductsGrid />
       </div>
     )
   }
