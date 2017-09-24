@@ -1,30 +1,24 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Layout } from './Layout';
-import { Home } from './IndexPage';
-import ProductsGrid from './Products';
-import { AthletePage } from './AthletePage';
-import { NotFoundPage } from './NotFoundPage';
-import athletes from '../data/athletes';
 
-const renderIndex = () => <Home />;
-const renderAthlete = ({ match, staticContext }) => {
-  const id = match.params.id;
-  const athlete = athletes.find(current => current.id === id);
-  if (!athlete) {
-    return <NotFoundPage staticContext={staticContext} />;
-  }
+// Base Component
+import Layout from './Layout';
 
-  return <AthletePage athlete={athlete} athletes={athletes} />;
-};
+// Page Components
+import MainPage from './MainPage';
+import ProductsPage from './ProductsPage';
+import RecipesPage from './RecipesPage';
+import NewsAndEventsPage from './NewsAndEventsPage';
+import NotFoundPage from './NotFoundPage';
 
 export const App = () => (
   <Layout>
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/products" component={ProductsGrid} />
-      //<Route exact path="/athlete/:id" render={renderAthlete} />
-      //<Route component={NotFoundPage} />
+      <Route exact path="/" component={MainPage} />
+      <Route exact path="/products" component={ProductsPage} />
+      <Route exact path="/recipes" component={RecipesPage} />
+      <Route exact path="/news-and-events" component={NewsAndEventsPage} />
+      <Route component={NotFoundPage} />
     </Switch>
   </Layout>
 );

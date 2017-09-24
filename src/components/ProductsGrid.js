@@ -1,11 +1,10 @@
 import React from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
 
-class ProductsGrid extends React.Component {
+export class ProductsGrid extends React.Component {
   render() {
     return (
       <div>
-        hello my name is sherwin
         <Product />
         <Product />
         <Product />
@@ -16,7 +15,7 @@ class ProductsGrid extends React.Component {
   }
 }
 
-class Product extends React.Component {
+export class Product extends React.Component {
   render() {
     return (
       <div>
@@ -27,7 +26,7 @@ class Product extends React.Component {
   }
 }
 
-class ProductImage extends React.Component {
+export class ProductImage extends React.Component {
   render() {
     return (
       <div>PRODUCT IMAGE</div>
@@ -36,7 +35,7 @@ class ProductImage extends React.Component {
 
 }
 
-class ProductDescription extends React.Component {
+export class ProductDescription extends React.Component {
   render() {
     return (
       <div>PRODUCT DESCRIPTION</div>

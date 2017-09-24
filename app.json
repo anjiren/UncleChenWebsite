@@ -1,17 +1,15 @@
 {
-  "name": "Judo Heroes 2",
-  "description": "A sample Universal JavaScript application with React and Express",
-  "repository": "https://github.com/lmammino/judo-heroes-2",
-  "logo": "https://raw.githubusercontent.com/lmammino/judo-heroes-2/master/src/static/img/logo-judo-heroes.png",
-  "keywords": ["node", "express", "react", "universal", "javascript"],
-  "env": {
+  "name": "uncle-chen-app",
+  "description": "Uncle Chen website",
+  "repository": "https://github.com/anjren/UncleChenWebsite",
+  "keywords": [
+    "Uncle",
+    "Chen"
+  ],
+    "env": {
     "PORT": {
       "description": "The port where the web server will be running",
       "value": "3000"
     }
   },
-  "buildpacks": [
-    { "url": "heroku/nodejs" },
-    { "url": "https://github.com/lmammino/heroku-buildpack-npm-build" }
-  ]
 }
