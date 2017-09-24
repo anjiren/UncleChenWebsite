@@ -1,10 +1,17 @@
 import React from 'react'
 import {render} from 'react-dom';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Route,
   Link
 } from 'react-router-dom';
+
+import {
+  Router,
+  browserHistory
+} from 'react-router';
+
+import { matchRoutes, renderRoutes } from 'react-router-config'
 
 // Styles
 import '../public/css/normalize.css';
@@ -14,11 +21,42 @@ import '../public/css/uc.css';
 // Components
 import Products from './Products.jsx';
 import Recipes from './Recipes.jsx';
+import RecipeDetail from './RecipeDetail.jsx';
+import NewsAndEvents from './NewsAndEvents.jsx';
 import MainNav from './MainNav.jsx';
 import ProductsGrid from './ProductsGrid.jsx';
 
-const Home = () => (
+// TODO
+const routes = [
+  { component: Main,
+    routes: [
+      { path: '/',
+        exact: true,
+        component: Home
+      },
+      { path: '/products',
+        component: Products,
+        // routes: [
+        //   { path: '/child/:id/grand-child',
+        //     component: GrandChild
+        //   }
+        // ]
+      },
+      {
+        path: '/recipes',
+        component: Recipes,
+      },
+      {
+        path: '/news-and-events',
+        component: NewsAndEvents,
+      },
+    ]
+  }
+];
+
+export const Home = () => (
   <div className="uc-chrome">
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8"></link>
     <MainNav />
     <div className="uc-workspace">
       <div className="row">
@@ -63,9 +101,22 @@ const Home = () => (
       </div>
       <div className="uc-landing__contact-us">
         <div>
+          <h5>Store Hours & Location</h5>
+        </div>
+        <div>
+          <p>Open daily 9am - 5pm</p>
+          <p>
+            33035 Transit Avenue
+            Union City, CA 94587
+          </p>
+        </div>
+        <div>
           <h5>Contact Us</h5>
         </div>
         <div>
+          <p>
+            <span className="socicon-instagram"></span> @HelloUncleChen
+          </p>
           <p>For institutional clients: +15104718299</p>
           <p>For supermarkets: +15104716799</p>
           <p>For restaurants: +15104713799</p>
@@ -83,42 +134,15 @@ const Topic = ({ match }) => (
   </div>
 );
 
-// const Recipes = ({ match }) => (
-//   <div>
-//     <h2>Recipes</h2>
-//     <ul>
-//       <li>
-//         <Link to={`${match.url}/rendering`}>
-//           Rendering with React
-//         </Link>
-//       </li>
-//       <li>
-//         <Link to={`${match.url}/components`}>
-//           Components
-//         </Link>
-//       </li>
-//       <li>
-//         <Link to={`${match.url}/props-v-state`}>
-//           Props v. State
-//         </Link>
-//       </li>
-//     </ul>
-//
-//     <Route path={`${match.url}/:topicId`} component={Topic}/>
-//     <Route exact path={match.url} render={() => (
-//       <h3>Please select a topic.</h3>
-//     )}/>
-//   </div>
-// );
-
-const Main = () => (
-  <Router>
+export const Main = () => (
+  <BrowserRouter>
     <div>
       <Route exact path="/" component={Home}/>
       <Route path="/products" component={Products}/>
       <Route path="/recipes" component={Recipes}/>
+      <Route path="/news-and-events" component={NewsAndEvents}/>
     </div>
-  </Router>
+  </BrowserRouter>
 );
 
 render(<Main/>, document.getElementById('app'));
