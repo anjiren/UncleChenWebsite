@@ -1,5 +1,5 @@
 node_modules
 *.DS_Store
 .babel_cache/*
-./src/server-es5.js
-./src/static/js/bundle.js
+server-es5.js
+bundle.js
