@@ -28,6 +28,9 @@
     "url": "https://github.com/anjren/UncleChenWebsite/issues"
   },
   "homepage": "https://github.com/anjren/UncleChenWebsite#readme",
+  "engines": {
+    "node": "6.10.2"
+  },
   "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
