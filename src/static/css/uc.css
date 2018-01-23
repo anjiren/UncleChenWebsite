@@ -3,7 +3,15 @@
 html, body {
   height: 100%;
   font-family: 'Quicksand', sans-serif;
-  background-color: #1c1c1c;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 0;
 }
 
 .uc-chrome {
@@ -61,8 +69,6 @@ html, body {
   height: 100%;
   min-height: 100vh;
   padding-left: 0;
-  background-color: #1c1c1c;
-  color: white;
 }
 
 .uc-workspace--white {
@@ -80,8 +86,16 @@ h2.uc-title {
   font-family: 'Unica One', 'Quicksand', sans-serif;
 }
 
+.uc-landing__banner-wrapper {
+  background-color: #1c1c1c;
+}
+
 .uc-landing__banner {
   width: 100%;
+}
+
+.uc-landing__header-wrapper {
+  background-color: #1c1c1c;
 }
 
 .uc-landing__header {
@@ -91,6 +105,7 @@ h2.uc-title {
   letter-spacing: 0.2rem;
   font-family: 'Unica One', 'Quicksand', sans-serif;
   font-weight: 500;
+  color: white;
 }
 
 .uc-landing__content-header {
@@ -364,11 +379,36 @@ h2.uc-title {
   color: #1c1c1c;
 }
 
+/* Product Pages */
+
 .uc-product-category-preview__link {
   text-decoration: none;
   color: white;
 }
 
+.uc-product-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.uc-product-brush-background {
+  position: relative;
+  height: 450px;
+  width: 500px;
+}
+.uc-product-preview-img-wrapper {
+  position: relative;
+  padding: 40px 100px;
+}
 .uc-product-preview-img {
-  height: 300px;
+  position: absolute;
+  left: 100px;
+  top: 140px;
+  height: 200px;
+  padding: 20px 100px;
+}
+
+.uc-product-preview-text {
+  align-self: center;
+  padding-bottom: 80px;
 }

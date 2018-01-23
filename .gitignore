@@ -1,5 +1,6 @@
 node_modules
 *.DS_Store
+src/*.DS_Store
 .babel_cache/*
 server-es5.js
 bundle.js

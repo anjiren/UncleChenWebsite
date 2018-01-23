@@ -11,7 +11,7 @@ const products =
                         "/img/products/A (oil)/A-6/A-6-1/A-6-1-c.jpg"
                     ],
                     "name_cn": "\u5bcc\u8cb4\u7d14\u9ebb\u6cb9",
-                    "name_en": "100% Pure Sesame Oil"
+                    "name_en": "100% Pure Sesame Oil",
                 }
             },
             "A-6-2": {
@@ -50,7 +50,13 @@ const products =
                         "/img/products/A (oil)/A-6/A-6-4/A-6-4-d.jpg"
                     ],
                     "name_cn": "\u7f8e\u5473\u9999\u9ebb\u6cb9",
-                    "name_en": "Meiwei Sesame Oil"
+                    "name_en": "Meiwei Sesame Oil",
+                    "sizes": [
+                      "Box of 4 x 1 gl. bottles",
+                      "Box of 6 x 1/2 gl. bottle",
+                      "Box of 12 x 16 oz. bottles",
+                      "Box of 24 x 8 oz. bottles"
+                    ],
                 }
             },
             "A-6-5": {

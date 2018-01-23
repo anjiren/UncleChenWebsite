@@ -5,11 +5,11 @@ import MainNav from './MainNav';
 export const MainPage = () => (
   <div>
     <div className="row">
-      <div className="twelve columns">
+      <div className="twelve columns uc-landing__banner-wrapper">
         <img className="uc-landing__banner" type="image/png" src="/img/peppers_cropped.png"/>
       </div>
     </div>
-    <div className="row">
+    <div className="row uc-landing__header-wrapper">
       <h1 className="twelve column uc-landing__header" id="about">
         Delightful Food for a Healthy Life
       </h1>

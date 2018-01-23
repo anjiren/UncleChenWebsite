@@ -15,7 +15,6 @@ export class ProductsGridPage extends React.Component {
       return <NotFoundPage />
     }
 
-    // i.e. 'Sesame Oils' in 'Oils';
     const productsInCategory = [];
     Object.entries(products).forEach(([subcategoryName, subcategoryProducts]) => {
       Object.entries(subcategoryProducts).forEach(([productName, productData]) => {
@@ -25,12 +24,31 @@ export class ProductsGridPage extends React.Component {
       });
     });
 
+    /**
+     * Format sizes for a product as a list
+     */
+    function getSizes(productData) {
+      if (productData.metadata.sizes) {
+        return productData.metadata.sizes.map((size, index) => {
+          return <li key={index}>{size}</li>;
+        });
+      }
+    }
+
     const productsComponents = productsInCategory.map(productData => {
       const imageUri = productData.metadata.images[0];
       return (
         <div className="uc-product-preview" key={productData.metadata.name_en}>
-          <img className="uc-product-preview-img" type="image/jpg" src={imageUri} />
-          {productData.metadata.name_en}
+          <div className="uc-product-preview-img-wrapper">
+            <img className="uc-product-brush-background" type="image/jpg" src="/img/brush_bg_2.png" />
+            <img className="uc-product-preview-img" type="image/jpg" src={imageUri} />
+          </div>
+          <div className="uc-product-preview-text">
+            <h5>{productData.metadata.name_en}</h5>
+            <div>
+              {getSizes(productData)}
+            </div>
+          </div>
         </div>
       )
     });
