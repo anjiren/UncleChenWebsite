@@ -53,6 +53,7 @@ export class RecipeDetailPage extends React.Component {
     return (
       <div className="uc-recipe-detail-wrapper">
         <div className="uc-recipe-detail">
+          <img className="uc-recipe-detail-img" type="image/jpg" src="/img/chinese_fried_chicken.jpg"></img>
           <h2>{recipeName}</h2>
           <h5>Ingredients</h5>
           <ul>

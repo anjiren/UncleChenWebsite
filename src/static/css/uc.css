@@ -362,6 +362,10 @@ h2.uc-title {
   padding: 60px 40px;
 }
 
+.uc-recipe-detail-img {
+  width: 100%;
+}
+
 .uc-recipe-detail h3 {
   font-family: 'Unica One', 'Quicksand', sans-serif;
 }
