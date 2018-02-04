@@ -13,8 +13,8 @@ categories_to_product_categories = {
 
 def find_images_for_product(product_key):
     images = []
-    for root, dirs, files in os.walk('.'):
-        root = '/img' + root[1:]
+    for root, dirs, files in os.walk('../static'):
+        root = root.replace('../static', '')
         file_set = [fn for fn in files if '.jpg' in fn and fn[0] != '_']
         product_images = [fn for fn in file_set if re.compile(product_key + '(-.)?\.jpg').match(fn)]
         if product_images:
@@ -31,13 +31,14 @@ def process():
 
         csv_reader = csv.reader(products_csv)
         for row in csv_reader:
-            # Hack to make sure each CSV has three entries,
+            """# Hack to make sure each CSV has three entries,
             # because some of the english names have commas.
             if len(row) > 3:
-                name_en = ','.join(row[3:])
+                name_en = ','.join(row[2:])
                 row[3] = name_en
                 row = row[:3]
-            [identifier, name_cn, name_en] = row
+            """
+            [identifier, product_id, name_cn, name_en, sizes] = row
 
             identifier_parts = identifier.split('-')
 
@@ -66,7 +67,9 @@ def process():
                     "metadata": {
                         "name_en": name_en,
                         "name_cn": name_cn,
-                        "images": find_images_for_product(key3)
+                        "product_id": product_id,
+                        "sizes": sizes.split("_"),
+                        "images": find_images_for_product(key3),
                     }
                 }
             else:
