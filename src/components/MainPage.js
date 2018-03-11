@@ -6,7 +6,7 @@ export const MainPage = () => (
   <div>
     <div className="row">
       <div className="twelve columns uc-landing__banner-wrapper">
-        <img className="uc-landing__banner" type="image/png" src="/img/peppers_cropped.png"/>
+        <img className="uc-landing__banner" type="image/jpeg" src="/img/uf_peppers_cropped.jpg"/>
       </div>
     </div>
     <div className="row uc-landing__header-wrapper">

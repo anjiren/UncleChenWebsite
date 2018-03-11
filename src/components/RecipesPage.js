@@ -13,7 +13,7 @@ export class RecipesPage extends React.Component {
     Object.entries(recipes).forEach(([id, recipeData]) => {
       recipeComponents.push(
         <div
-          className="uc-workspace-grid-box uc-workspace-grid-box--white"
+          className="uc-workspace-grid-box uc-workspace-grid-box--red"
           key={id}>
           <Link
             className="uc-recipe-preview__link"
