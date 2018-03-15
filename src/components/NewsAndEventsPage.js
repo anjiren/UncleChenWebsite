@@ -4,21 +4,20 @@ export const NewsAndEventsPage = () => {
   const events = [ 'homestyle-cooking-doug-eng' ];
   const eventDetails = {
     'homestyle-cooking-doug-eng': {
-      title: 'Homestyle Cooking with Chef Doug Eng',
-      description: `
-      There are thousands of Chinese restaurants but many people did not grow up enjoying the foods they produce. Instead, the traditional Chinese home meal is far different from what you would order at a reastaurant. For many second and third-generation Chinese, these recipes are cherished memories. This class is led by Chef Doug Eng whose family runs many food-related businesses in the Bay Area.
+      title: `Uncle Chen's Favorite Asian Cuisine`,
+      description: `Union International Food and ITK Culinary is teaming up for a series of Chinese Cooking Classes from top local restaurants such as Chef Chu’s in Los Altos.  As a supplier of ingredients, Uncle Chen is a well known brand in mostly Asian households, but they’re forte is really keeping restaurants stocked with sauces for all of us to enjoy.
       \n
-      Winter Melon Soup\n
-      Steamed Pork Spare Ribs with Black Bean Sauce\n
-      Steamed Pork Cake with Preserved Cabbage\n
-      Boiled Lettuce with Shiitake Mushrooms and Oyster Sauce\n
-      Stir Fried Chinese Broccoli with Chicken\n
-      Steamed Tofu with Shrimp\n
+      For our first class, we’ll cover the following: Hardware: Wok, Spatula, Wisk, Cover and Heat. All critical items that will be discussed thoroughly.
+      \n
+      Menu:\n
+      Mapo Tofu\n
+      Original Dry Fried Chicken\n
+      Dry Braised Prawns\n
     `,
-      date: 'TBD',
-      time: '3pm',
+      date: 'April 1st, 2018',
+      time: '10am',
       duration: 'About 3 hours',
-      cost: '$125',
+      cost: '$128',
       url: 'http://itkculinary.com/classes-workshops/uncle-chens-favorite-asian-cuisine/',
     }
   };
