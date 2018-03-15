@@ -19,6 +19,7 @@ export const NewsAndEventsPage = () => {
       time: '3pm',
       duration: 'About 3 hours',
       cost: '$125',
+      url: 'http://itkculinary.com/classes-workshops/uncle-chens-favorite-asian-cuisine/',
     }
   };
   const eventDetailComponents = [];
@@ -33,7 +34,7 @@ export const NewsAndEventsPage = () => {
           <div className="uc-event-detail-description">
             {eventDetail.description.split("\n").map(line => {
               if (line) {
-                return <div>{line}<br></br></div>;  
+                return <div>{line}<br></br></div>;
               }
             })}
           </div>
@@ -52,7 +53,7 @@ export const NewsAndEventsPage = () => {
                 <p>{eventDetail.cost}</p>
               </div>
             </div>
-            <button>Sign up</button>
+            <a href={eventDetail.url}><button>Sign up</button></a>
           </div>
         </div>
       </div>
