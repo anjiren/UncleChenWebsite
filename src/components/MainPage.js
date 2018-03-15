@@ -10,9 +10,7 @@ export const MainPage = () => (
       </div>
     </div>
     <div className="row uc-landing__header-wrapper">
-      <h1 className="twelve column uc-landing__header" id="about">
-        Delightful Food for a Healthy Life
-      </h1>
+      <img className="twelve column uc-landing__header" type="image/png" src="/img/delightful_food_for_a_healthy_life.png"/>
     </div>
     <div className="uc-workspace-grid--blocky">
       <div className="uc-workspace-grid-box-nonclick">
