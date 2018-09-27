@@ -40,7 +40,6 @@ export class ProductsGridPage extends React.Component {
       return (
         <div className="uc-product-preview" key={productData.metadata.name_en}>
           <div className="uc-product-preview-img-wrapper">
-            <img className="uc-product-brush-background" type="image/png" src="/img/brush_bg_2.png" />
             <img className="uc-product-preview-img" type="image/jpg" src={imageUri} />
           </div>
           <div className="uc-product-preview-text">
