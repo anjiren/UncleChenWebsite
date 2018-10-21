@@ -4,19 +4,14 @@ import MainNav from './MainNav';
 // Static Main Page
 export const MainPage = () => (
   <div>
-    <div className="row">
-      <div className="twelve columns uc-landing__banner-wrapper">
-        <img className="uc-landing__banner" type="image/jpeg" src="/img/uf_peppers_cropped.jpg"/>
-      </div>
-    </div>
     <div className="row uc-landing__header-wrapper">
       <img className="twelve column uc-landing__header" type="image/png" src="/img/delightful_food_for_a_healthy_life.png"/>
     </div>
     <div className="uc-workspace-grid--blocky">
       <div className="uc-workspace-grid-box-nonclick">
       </div>
-      <div className="uc-workspace-grid-box-nonclick uc-workspace-grid-box-nonclick--black">
-        <h4>Serving Chinese Customers, Penetrating US Markets</h4>
+      <div className="uc-workspace-grid-box-nonclick uc-workspace-grid-box-nonclick">
+        <h5>Serving Chinese Customers, Penetrating US Markets</h5>
         <p>
           <strong>Union (Lian How) Food</strong> is a family-owned business with a continuous operation for more than half a century. In 1965, Mr. Y. B. Huang, founder of the company, started producing and marketing the proprietarily fermented bean and chili pastes/sauces in Taiwan. By the 1970s, the company had expanded with processing and sales facilities in China, Thailand, South and Central America, and the US Union International Food (UIF) was established in California in 1985. Under the <strong>Uncle Chen®</strong> brand, the subsidiary extended its business to include edible oils, sauces, seasonings/spices, teas and dried Asian foods.
 
@@ -24,8 +19,8 @@ export const MainPage = () => (
         </p>
       </div>
       <div className="uc-workspace-grid-box-nonclick uc-workspace-grid-box-nonclick--red"></div>
-      <div className="uc-workspace-grid-box-nonclick uc-workspace-grid-box-nonclick--black">
-        <h4>A Committment to Good Health</h4>
+      <div className="uc-workspace-grid-box-nonclick uc-workspace-grid-box-nonclick">
+        <h5>A Committment to Good Health</h5>
         <p>
           It has been Mr. Y. B. Huang’s firm commitment ever since the founding of Union Food, to conduct the business with social responsibility. Taking advantage of traditional Chinese fermentation processing while adopting the advanced technologies, the company endeavors to produce the delightfully tasty, proven healthful, and welcomingly convenient products for the market, both in China and abroad. Throughout his life he emphasizes personal integrity, product quality, and charity. Therefore, he never sacrifices these standards for personal gains, always sells high quality products at modest prices, and continually makes contributions to the communities.
 
@@ -34,8 +29,8 @@ export const MainPage = () => (
         </p>
       </div>
       <div className="uc-workspace-grid-box-nonclick uc-workspace-grid-box-nonclick--red"></div>
-      <div className="uc-workspace-grid-box-nonclick uc-workspace-grid-box-nonclick--black">
-        <h4>American Standards for a Chinese Market</h4>
+      <div className="uc-workspace-grid-box-nonclick uc-workspace-grid-box-nonclick">
+        <h5>American Standards for a Chinese Market</h5>
         <p>
             Horrendous incidents of food poisoning and contamination, such as, recycled waste oil used for human consumption, adulterated baby formula causing infant malnutrition and developmental damages, and health hazardous rice and bogus drugs on the market, were reported in recent years in China. People begin to be deeply concerned about food safety. Mr. Y.B. Huang and Daniel Chen felt the pain for the consumers there, and pondered, “Can’t we market our products sold in the United States for the past 30 years also on the shelves in China to lead the reform of its food industry?” “American standards for Chinese market!” has, thus, quickly become an idea enthusiastically received by our clients and supported by UIF associates. Consequently, entering Chinese market is now not only the hope, but determination and an aim for immediate actions of the corporation!
         </p>
