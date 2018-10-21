@@ -449,8 +449,9 @@ h2.uc-title {
   width: auto;
   padding: 5px 20px;
   background-color: #ffdb5d;
-  font-size: 9px;
+  font-size: 18px;
   text-transform: uppercase;
+  font-family: 'Unica One', sans-serif;
 }
 
 .uc-event-detail-body {

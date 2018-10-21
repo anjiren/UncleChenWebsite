@@ -27,7 +27,7 @@ export const NewsAndEventsPage = () => {
     const eventDetail = eventDetails[eventName];
     eventDetailComponents.push(
       <div className="uc-event-detail">
-        <div className="uc-event-detail-badge">Upcoming</div>
+        <div className="uc-event-detail-badge">Past</div>
         <h3 className="uc-event-detail-title">{eventDetail.title}</h3>
         <div className="uc-event-detail-body">
           <div className="uc-event-detail-description">
